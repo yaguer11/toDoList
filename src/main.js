@@ -8,6 +8,7 @@ const editarTarea = require('./componentes/editarTarea');
 
 // Función para mostrar menú
 function mostrarMenu() {
+  
   console.log('Menu:');
   console.log('(1) Ver Mis Tareas');
   console.log('(2) Buscar una Tarea');
@@ -50,9 +51,10 @@ function manejarOpcion() {
 }
 
 function volverMenu() {
-  const respuesta = prompt('¿Desea volver al menú principal? (Sí/No): ').toLowerCase();
+  console.log("¿Desea volver al menú principal? (s) Sí (n) No ")
+  const respuesta = prompt('Ingrese opción:  ').toLowerCase();
 
-  if (respuesta === 'si' || respuesta === 'sí') {
+  if (respuesta === 's' ) {
     manejarOpcion(); // Volver al menú principal
   } else {
     console.log('Saliendo de la aplicación.');
