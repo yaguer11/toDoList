@@ -5,6 +5,7 @@ const verTarea = require('./componentes/verTarea');
 const buscarTarea = require('./componentes/buscarTarea');
 const agregarTarea = require('./componentes/agregarTarea');
 const editarTarea = require('./componentes/editarTarea');
+listaTareas = [];
 
 // Función para mostrar menú
 function mostrarMenu() {
@@ -33,7 +34,8 @@ function manejarOpcion() {
       volverMenu();
       break;
     case '3':
-      agregarTarea();
+      agregarTarea(listaTareas);
+      console.log(listaTareas.length);
       volverMenu();
       break;
     case '4':
