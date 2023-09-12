@@ -26,7 +26,8 @@ function manejarOpcion() {
 
   switch (opcion) {
     case '1':
-      verTarea();
+      //Visualiza todas las tareas
+      verTarea(listaTareas);
       volverMenu();
       break;
     case '2':
@@ -35,7 +36,6 @@ function manejarOpcion() {
       break;
     case '3':
       agregarTarea(listaTareas);
-      console.log(listaTareas.length);
       volverMenu();
       break;
     case '4':
