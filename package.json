@@ -9,6 +9,8 @@
   "author": "German Muñoz",
   "license": "ISC",
   "dependencies": {
+    "cli-table": "^0.3.11",
+    "mysql2": "^3.6.1",
     "prompt-sync": "^4.2.0"
   }
 }
